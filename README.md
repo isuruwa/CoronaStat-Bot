@@ -1,5 +1,6 @@
 <a href="https://github.com/isuruwa/CoronaStat-Bot"><img title="addon" src="https://img.shields.io/badge/isuruwa-CoronaStat--Bot-brightgreen?style=for-the-badge&logo=appveyor"></a>
 <br>
+<br>
 ![Covid-19 Cases](https://covid19-badges.herokuapp.com/confirmed/latest)
 ![Covid-19 Deaths](https://covid19-badges.herokuapp.com/deaths/latest)
 ![Covid-19 Recovered](https://covid19-badges.herokuapp.com/recovered/latest)
@@ -40,6 +41,7 @@
 * Data as a .json
 * Data as a .html
 * Saving All Data with Inserted extensions .
+* Hope More Advanced Features With Different API s in Future . 
 
 <br>
 
@@ -58,4 +60,14 @@
 * bash coronastat-bot.sh
 
 ```
+
+# A Hudge Thanks To <a href="https://github.com/sagarkarira/coronavirus-tracker-cli"> Web API </a>
+
+## SCREENSHOTS :
+
+![Capture](https://user-images.githubusercontent.com/72663288/127603642-3a909c9c-6828-4bec-aa27-2f63d6548841.PNG)
+
+![Screenshot_20210730-102744_Termux](https://user-images.githubusercontent.com/72663288/127603689-cd36c366-ecc5-42d1-8844-d9b38cf078b9.jpg)
+
+![Screenshot_20210730-102557_Termux](https://user-images.githubusercontent.com/72663288/127603695-8eeb344d-6150-4c30-af90-de3b065072f1.jpg)
 
