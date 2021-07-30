@@ -48,6 +48,7 @@
 
 ## INSTALLTION : [ TERMUX / LINUX ]
 
+``` 
 * apt update
 * apt upgrade
 * apt install toilet figlet git wget curl ruby
@@ -55,4 +56,6 @@
 * git clone https://github.com/isuruwa/CoronaStat-Bot
 * cd CoronaStat-Bot
 * bash coronastat-bot.sh
+
+```
 
