@@ -1,4 +1,8 @@
 <a href="https://github.com/isuruwa/CoronaStat-Bot"><img title="addon" src="https://img.shields.io/badge/isuruwa-CoronaStat--Bot-brightgreen?style=for-the-badge&logo=appveyor"></a>
+<br>
+![Covid-19 Cases](https://covid19-badges.herokuapp.com/confirmed/latest)
+![Covid-19 Deaths](https://covid19-badges.herokuapp.com/deaths/latest)
+![Covid-19 Recovered](https://covid19-badges.herokuapp.com/recovered/latest)
 <p align="center">
 
 ![maxresdefault](https://user-images.githubusercontent.com/72663288/127557267-a053a70c-26f7-4b7b-b23f-711ea4c2132e.jpg)
@@ -36,3 +40,19 @@
 * Data as a .json
 * Data as a .html
 * Saving All Data with Inserted extensions .
+
+<br>
+
+![carbon(2)](https://user-images.githubusercontent.com/72663288/127601103-9c58d99f-faf5-4520-ab0a-8ad39f5baddb.png)
+
+
+## INSTALLTION : [ TERMUX / LINUX ]
+
+* apt update
+* apt upgrade
+* apt install toilet figlet git wget curl ruby
+* gem install lolcat
+* git clone https://github.com/isuruwa/CoronaStat-Bot
+* cd CoronaStat-Bot
+* bash coronastat-bot.sh
+
