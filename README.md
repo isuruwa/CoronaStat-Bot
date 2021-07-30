@@ -61,7 +61,7 @@
 
 ```
 
-# A Hudge Thanks To <a href="https://github.com/sagarkarira/coronavirus-tracker-cli"> Web API </a>
+# A Huge Thanks To <a href="https://github.com/sagarkarira/coronavirus-tracker-cli"> Web API </a>
 
 ## SCREENSHOTS :
 
