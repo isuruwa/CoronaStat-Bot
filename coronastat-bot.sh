@@ -1,7 +1,7 @@
 # !/bin/bash
 # -*- coding: utf-8 -*-
 # CODED BY DEVILMASTER
-# coppy with proper credits
+# Please coppy with proper credits
 
 
 # Source 1 stats - updated once a day from John Hopkins University
