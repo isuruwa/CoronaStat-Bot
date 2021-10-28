@@ -87,49 +87,31 @@
 # https://corona-stats.online/china/graph
 
 
-dependencies(){
-
+function dependencies(){
 command -v curl > /dev/null 2>&1 || { echo >&2 "package curl is not installed ... Aborting ..."; exit 1; }
-
 command -v wget > /dev/null 2>&1 || { echo >&2 "package wget is not installed ... Aborting ..."; exit 1; }
-
 }
-
-trap 'printf "\n";partial;exit 1' 2
 
 function author(){
-
-echo -e ""
-echo -e "    \e[1;37m  [\e[1;31m+\e[1;37m]   DEVELOPED BY DEVIL MASTER \e[1;37m  [\e[1;31m+\e[1;37m]"
-echo -e "    \e[1;37m  [\e[1;31m+\e[1;37m]      github.com/isuruwa     \e[1;37m  [\e[1;31m+\e[1;37m]"
-echo -e "\n" 
-
+echo -e "\n    \e[1;37m  [\e[1;31m+\e[1;37m]   DEVELOPED BY DEVIL MASTER \e[1;37m  [\e[1;31m+\e[1;37m]"
+echo -e "    \e[1;37m  [\e[1;31m+\e[1;37m]      github.com/isuruwa     \e[1;37m  [\e[1;31m+\e[1;37m]\n"
 }
-
 
 function back(){
-echo -e ""
-echo -n -e "\033[35m  [\033[33m*\033[35m]\e[1;32m Press Enter To Continue"
+echo -n -e "\n\033[35m  [\033[33m*\033[35m]\e[1;32m Press Enter To Continue"
 read
 menu
-
 }
-
 
 function chk(){
-
 clear
 git pull
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;32m\e[1;31m Note - If You Using Termux , Recommaned To Rotate To Landscape Mode"
-echo -e ""
+echo -e "\033[35m  [\033[33m*\033[35m]\e[1;32m\e[1;31m Note - If You Using Termux , Recommaned To Rotate To Landscape Mode\n"
 echo -e "\033[35m  [\033[33m*\033[35m]\e[1;32m Press Enter To Continue : "
 read
-
 }
 
-
 function menu() {
-
 clear
 figlet -f smmono9 "CoronaStat-Bot" | lolcat
 author
@@ -139,8 +121,7 @@ echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m 3.Country Wise Corona Stats"
 echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35m 4.Top Number based Corona Stats"
 echo -e "\033[35m  [\033[33m*\033[35m]\e[1;34m 5.State based Corona Stats"
 echo -e "\033[35m  [\033[33m*\033[35m]\e[0;36m 6.Advanced"
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m 7.Exit"
-echo ""
+echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m 7.Exit\n"
 echo -n -e "\033[35m  [\033[33m*\033[35m]\e[1;32m Enter Choice : "
 read choice
 if [ "${choice:-}" = "1" ]
@@ -168,10 +149,7 @@ then
      advanced
 elif [ "${choice:-}" = "7" ]
 then
-     echo -e ""
-     echo -e "\e[1;37m  [\e[1;31m+\e[1;37m] STAY SAFE ! \e[1;37m  [\e[1;31m+\e[1;37m]"
-     sleep 1
-     echo -e ""
+     echo -e "\n\e[1;37m  [\e[1;31m+\e[1;37m] STAY SAFE ! \e[1;37m  [\e[1;31m+\e[1;37m]"
      echo -e "\e[1;37m  [\e[1;31m+\e[1;37m] EXPECT US ! \e[1;37m  [\e[1;31m+\e[1;37m]"
      sleep 1
      exit 0
@@ -183,26 +161,17 @@ else
     sleep 2
     menu
 fi
-
 }
 
 function source(){
-
-echo -e ""
-echo -e "\e[1;37m  [\e[1;31m+\e[1;37m]\e[1;33m Select Source"
-echo -e ""
+echo -e "\n\e[1;37m  [\e[1;31m+\e[1;37m]\e[1;33m Select Source\n"
 echo -e "\e[1;37m  [\e[1;31m+\e[1;37m]\e[1;32m 1.Source 1"
-echo -e "\e[1;37m  [\e[1;31m+\e[1;37m]\e[1;32m 2.Source 2"
-echo -e ""
+echo -e "\e[1;37m  [\e[1;31m+\e[1;37m]\e[1;32m 2.Source 2\n"
 echo -n -e "\033[35m  [\033[33m*\033[35m]\033[1;35m Enter Your option :  "
 read userinput1
-echo -e ""
-
 }
 
-
 function lk(){
-
 clear
 figlet -f smmono9 "  Lk-Corona" | lolcat
 figlet -f smmono9 "    Stat" | lolcat
@@ -222,11 +191,9 @@ else
     sleep 2
     menu
 fi
-
 }
 
 function world(){
-
 clear
 figlet -f smmono9 " World-Corona" | lolcat
 figlet -f smmono9 "    Stat"  | lolcat
@@ -246,11 +213,9 @@ else
     sleep 2
     menu
 fi
-
 }
 
 function country(){
-
 clear
 figlet -f smmono9 "Country-Based" | lolcat
 figlet -f smmono9 "   Stat" | lolcat
@@ -276,33 +241,25 @@ else
     sleep 2
     menu
 fi
-
 }
 
 function number(){
-
 clear
 figlet -f smmono9 " Number-Based" | lolcat
 figlet -f smmono9 "   Stat" | lolcat
 author
 echo -n -e "\033[35m  [\033[33m*\033[35m]\e[1;32m Enter the number to make the top list : "
 read top
-echo ""
 curl https://corona-stats.online?top=$top
-
 }
 
-
 function state(){
-
 clear
 figlet -f smmono9 " State-Based" | lolcat
 figlet -f smmono9 "     Stat" | lolcat
 author
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m Still Support Only For Us"
-echo -e ""
+echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m Still Support Only For Us\n"
 source
-echo -e ""
 if [ "${userinput1:-}" = "1" ]
 then
     curl https://corona-stats.online/states/US?source=1
@@ -317,18 +274,15 @@ else
     sleep 2
     menu
 fi
-
 }
 
 function graph(){
-
 clear
 figlet -f smmono9 " Graph-Based" | lolcat
 figlet -f smmono9 "    Stat" | lolcat
 author
 echo -e "\033[35m  [\033[33m*\033[35m]\e[1;32m 1.World"
-echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35m 2.Country Based"
-echo -e ""
+echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35m 2.Country Based\n"
 echo -e -n "\033[35m  [\033[33m*\033[35m]\e[1;31m Enter Choice : "
 read userinput1
 if [ "${userinput1:-}" = "1" ]
@@ -344,46 +298,35 @@ else
     sleep 2
     menu
 fi
-
 }
 
 function json(){
-
 clear
 figlet -f smmono9 "  As a .json" | lolcat
 author
 echo -e -n "\033[35m  [\033[33m*\033[35m]\e[1;32m Enter Your Country Code/Name : "
 read cou
-echo -e ""
-echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35m Saving Data.json to a .txt File"
-echo -e ""
+echo -e "\n\033[35m  [\033[33m*\033[35m]\033[1;35m Saving Data.json to a .txt File\n"
 echo -n -e "\033[35m  [\033[33m*\033[35m]\e[1;31m Enter Output File Name : "
 read out
 curl https://corona-stats.online/$cou/?format=json > $out.txt
 echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m\e[1;33m Data Saved To $out.txt"
-
 }
 
 function html(){
-
 clear
 figlet -f smmono9 "  As a .html" | lolcat
 author
 echo -e -n "\033[35m  [\033[33m*\033[35m]\e[1;32m Enter Your Country Code/Name : "
 read cou
-echo -e ""
-echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35m Saving Data to a .html File"
-echo -e ""
+echo -e "\n\033[35m  [\033[33m*\033[35m]\033[1;35m Saving Data to a .html File\n"
 echo -n -e "\033[35m  [\033[33m*\033[35m]\e[1;31m Enter Output File Name : "
 read out
 wget -O $out.html https://corona-stats.online/$cou
 echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m\e[1;33m Data Saved To $out.html"
-
 }
 
-
 function advanced(){
-
 clear
 figlet -f smmono9 "ADVANCED MENU" | lolcat
 author
@@ -393,8 +336,7 @@ echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35m 3.Latest Corona News"
 echo -e "\033[35m  [\033[33m*\033[35m]\e[0;36m 4.Data as a Graph"
 echo -e "\033[35m  [\033[33m*\033[35m]\e[1;34m 5.Data as a .json"
 echo -e "\033[35m  [\033[33m*\033[35m]\e[1;33m 6.Data as a .html"
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m 7.Back"
-echo -e ""
+echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m 7.Back\n"
 echo -n -e "\033[35m  [\033[33m*\033[35m]\e[1;32m Enter Choice : "
 read userinput1
 if [ "${userinput1:-}" = "1" ]
@@ -406,8 +348,7 @@ then
     back
 elif [ "${userinput1:-}" = "2" ]
 then
-    echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35mAdd Own Parameters To Request "
-    echo ""
+    echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35mAdd Own Parameters To Request \n"
     echo -n -e "Param > "
     read param
     curl https://corona-stats.online$param
@@ -417,7 +358,6 @@ then
     clear
     figlet -f smmono9 " Latet News" | lolcat
     author
-    echo ""
     curl https://corona-stats.online/updates
     back
 elif [ "${userinput1:-}" = "4" ]
@@ -443,7 +383,6 @@ else
     sleep 2
     advanced
 fi
-
 }
 
 dependencies
