@@ -330,14 +330,14 @@ function advanced(){
 clear
 figlet -f smmono9 "ADVANCED MENU" | lolcat
 author
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;32m 1.Advanced Help"
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m\e[1;33m 2.Use Own Parameters"
-echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35m 3.Latest Corona News"
-echo -e "\033[35m  [\033[33m*\033[35m]\e[0;36m 4.Data as a Graph"
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;34m 5.Data as a .json"
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;33m 6.Data as a .html"
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m 7.Back\n"
-echo -n -e "\033[35m  [\033[33m*\033[35m]\e[1;32m Enter Choice : "
+echo -e "\033[35m  [\e[1;37m1\033[35m]\e[1;37m\e[1;32m Advanced Help"
+echo -e "\033[35m  [\e[1;37m2\033[35m]\e[1;37m\e[1;33m Use Own Parameters"
+echo -e "\033[35m  [\e[1;37m3\033[35m]\e[1;37m\033[1;35m Latest Corona News"
+echo -e "\033[35m  [\e[1;37m4\033[35m]\e[1;37m\e[0;36m Data as a Graph"
+echo -e "\033[35m  [\e[1;37m5\033[35m]\e[1;37m\e[1;34m Data as a .json"
+echo -e "\033[35m  [\e[1;37m6\033[35m]\e[1;37m\e[1;33m Data as a .html"
+echo -e "\033[35m  [\e[1;37m7\033[35m]\e[1;37m\e[1;31m Back\n"
+echo -n -e "\033[35m  [\e[1;37m+\033[35m]\e[1;37m\e[1;32m Enter Choice : "
 read userinput1
 if [ "${userinput1:-}" = "1" ]
 then
