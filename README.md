@@ -67,7 +67,7 @@
 
 ![Capture](https://user-images.githubusercontent.com/72663288/127603642-3a909c9c-6828-4bec-aa27-2f63d6548841.PNG)
 
-![Screenshot_20210730-102744_Termux](https://user-images.githubusercontent.com/72663288/127603689-cd36c366-ecc5-42d1-8844-d9b38cf078b9.jpg)
+![coronastat](https://user-images.githubusercontent.com/72663288/139230700-1575a4ee-5247-4485-8944-35ffb91c2b33.jpg)
 
 ![Screenshot_20210730-102557_Termux](https://user-images.githubusercontent.com/72663288/127603695-8eeb344d-6150-4c30-af90-de3b065072f1.jpg)
 
