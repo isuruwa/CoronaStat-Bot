@@ -164,10 +164,10 @@ fi
 }
 
 function source(){
-echo -e "\n\e[1;37m  [\e[1;31m+\e[1;37m]\e[1;33m Select Source\n"
-echo -e "\e[1;37m  [\e[1;31m+\e[1;37m]\e[1;32m 1.Source 1"
-echo -e "\e[1;37m  [\e[1;31m+\e[1;37m]\e[1;32m 2.Source 2\n"
-echo -n -e "\033[35m  [\033[33m*\033[35m]\033[1;35m Enter Your option :  "
+echo -e "\n\033[35m  [\e[1;37m+\033[35m]\e[1;37m Select Source\n"
+echo -e "\033[35m  [\e[1;37m1\033[35m]\e[1;32m Source 1"
+echo -e "\033[35m  [\e[1;37m2\033[35m]\e[1;32m Source 2\n"
+echo -n -e "\033[35m  [\e[1;37m+\033[35m]\e[1;37m Enter Your option :  "
 read userinput1
 }
 
@@ -187,7 +187,7 @@ elif [ "${userinput1:-}" = "" ]
 then
     lk
 else
-    echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m Wrong Choice"
+    echo -e "\033[35m  [\e[1;37m!\033[35m]\e[1;31m Wrong Choice"
     sleep 2
     menu
 fi
@@ -209,7 +209,7 @@ elif [ "${userinput1:-}" = "" ]
 then
     lk
 else
-    echo -e "\033[35m  [\033[33m*\033[35m]\e[1;31m Wrong Choice"
+    echo -e "\033[35m  [\e[1;37m!\033[35m]\e[1;31m Wrong Choice"
     sleep 2
     menu
 fi
@@ -237,7 +237,7 @@ elif [ "${userinput1:-}" = "" ]
 then
     lk
 else
-    echo -e $re "\033[35m  [\033[33m*\033[35m]\e[1;31m Wrong Choice"
+    echo -e "\033[35m  [\e[1;37m!\033[35m]\e[1;31m Wrong Choice"
     sleep 2
     menu
 fi
@@ -281,9 +281,9 @@ clear
 figlet -f smmono9 " Graph-Based" | lolcat
 figlet -f smmono9 "    Stat" | lolcat
 author
-echo -e "\033[35m  [\033[33m*\033[35m]\e[1;32m 1.World"
-echo -e "\033[35m  [\033[33m*\033[35m]\033[1;35m 2.Country Based\n"
-echo -e -n "\033[35m  [\033[33m*\033[35m]\e[1;31m Enter Choice : "
+echo -e "\033[35m  [\e[1;37m1\033[35m]\e[1;32m World"
+echo -e "\033[35m  [\e[1;37m2\033[35m]\e[1;32m  Country Based\n"
+echo -e -n "\033[35m  [\e[1;37m+\033[35m]\e[1;31m Enter Choice : "
 read userinput1
 if [ "${userinput1:-}" = "1" ]
 then
